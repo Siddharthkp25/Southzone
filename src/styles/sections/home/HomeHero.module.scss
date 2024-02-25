@@ -1,0 +1,59 @@
+@import "../../helpers/helpers.scss";
+
+.hero_wrap {
+	color: #eee;
+	font-size: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+	height: 100vh;
+	@include sm-down {
+		font-size: 45px;
+		display: block;
+	}
+    @include mdl-down{
+        height: 100%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+	.heading {
+		margin-top: 5%;
+		line-height: 1.2;
+		@include sm-down {
+			line-height: 1.5;
+			display: grid;
+			grid-template-columns: auto auto;
+			padding-top: 15%;
+		}
+		.main {
+			display: grid;
+			grid-template-columns: auto auto;
+			width: 30%;
+			align-items: center;
+			gap: 10px;
+			@include sm-down {
+				width: 100px;
+			}
+
+			.stripe {
+				width: 7vw;
+				height: 3px;
+				background-color: #fff;
+				align-items: flex-end;
+				margin-top: 20px;
+				@include sm-down {
+					align-items: center;
+				}
+			}
+		}
+	}
+	.banner1 {
+		width: 350px;
+		height: 300px;
+		@include sm-down {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}

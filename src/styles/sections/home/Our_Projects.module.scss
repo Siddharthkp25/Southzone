@@ -1,0 +1,17 @@
+@import "../../helpers/helpers.scss";
+
+.section_wrap {
+	.title {
+		margin-bottom: 30px;
+        color: var(--color_white);
+        font-family: var(--font_secondary);
+	}
+	.animation_section {
+		.marq_item {
+			margin-right: 10px;
+		}
+		.marquee_spacing {
+			margin-top: 10px;
+		}
+	}
+}

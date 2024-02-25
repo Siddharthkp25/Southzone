@@ -1,0 +1,258 @@
+@import "../helpers/helpers.scss";
+
+.main_footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	background-color: var(--color_grey_light);
+	padding-top: 45px;
+	@include lg-down {
+		position: static;
+	}
+	/* Ipad Pro Landscape */
+	@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: landscape) {
+		// position: static;
+	}
+	.subscribe_sec {
+		padding-bottom: 40px;
+		border-bottom: 1px solid rgba(112, 112, 112, 0.2);
+		margin: 0 50px 0 50px;
+
+		@include lg-down {
+			margin: 0 15px 0 15px;
+		}
+	}
+	.subscribe_footer {
+		@extend %align_item_center;
+		justify-content: space-between;
+		width: 100%;
+		flex-wrap: wrap;
+
+		.text_line {
+			width: 50%;
+			@include sm-down {
+				width: 100%;
+				margin-bottom: 10px;
+				font-size: 27px;
+			}
+		}
+
+		.subscribe_form {
+			width: 50%;
+			@include sm-down {
+				width: 100%;
+			}
+			.arrowbtn {
+				outline: 0;
+				border: 0;
+				background: none;
+				cursor: pointer;
+			}
+		}
+		.inpute_group {
+			@extend %f_r_a_center;
+			justify-content: space-between;
+			width: 100%;
+			max-width: 660px;
+			height: 55px;
+			background-color: var(--color_white);
+			padding: 18px 25px;
+			font-size: 16px;
+			input {
+				width: 100%;
+				background-color: transparent;
+				border: 0;
+				outline: 0;
+			}
+		}
+		.success_message {
+			margin-top: 3px;
+			position: absolute;
+		}
+	}
+
+	.logo_menu_button_sec {
+		padding-top: 42px;
+		padding-bottom: 80px;
+		margin: 0 50px 0 50px;
+		border-bottom: 1px solid rgba(112, 112, 112, 0.2);
+
+		@include lg-down {
+			margin: 0 15px 0 15px;
+		}
+
+		@include md-down {
+			padding-bottom: 40px;
+		}
+		@include sm-down {
+			padding-bottom: 20px;
+		}
+
+		.logo_menu_button {
+			@extend %d_flex;
+			justify-content: space-between;
+
+			@include md-down {
+				flex-wrap: wrap;
+			}
+		}
+		.logo_sec {
+			@extend %f_r_a_center;
+			width: 40%;
+			align-items: start;
+
+			@include lg-down {
+				width: 30%;
+			}
+
+			@include md-down {
+				width: 40%;
+			}
+
+			@include sm-down {
+				width: 100%;
+			}
+
+
+			.address {
+				flex: 1;
+				padding-left: 15px;
+
+				.para_text {
+					padding-bottom: 10px;
+
+					@include sm-down {
+						font-size: 15px;
+					}
+
+					a {
+						color: var(--color_black);
+					}
+				}
+			}
+		}
+
+		.menu_sec {
+			width: 50%;
+			@extend %d_flex;
+			justify-content: space-evenly;
+
+			@include md-down {
+				width: 60%;
+			}
+
+			@include sm-down {
+				width: 100%;
+				justify-content: space-between;
+				padding-top: 15px;
+				flex-wrap: wrap;
+			}
+
+			.menu {
+				@include sm-down {
+					width: 50%;
+					justify-content: space-between;
+				}
+				.sub_menu {
+					padding-bottom: 10px;
+					a {
+						color: var(--color_black);
+
+						@include sm-down {
+							font-size: 15px;
+						}
+					}
+				}
+				.mobile_menu {
+					display: none;
+					@include mdl-down {
+						display: block;
+					}
+				}
+				&.desktop_menu {
+					display: block;
+					@include mdl-down {
+						display: none !important;
+					}
+				}
+			}
+		}
+
+		.button_sec {
+			width: 20%;
+			@extend %d_flex;
+			@extend %f_d_column;
+			align-items: flex-end;
+
+			@include md-down {
+				width: 70%;
+				align-items: flex-start;
+				padding-top: 15px;
+			}
+			@include sm-down {
+				width: 100%;
+				flex-direction: row;
+				gap: 10px;
+			}
+
+			@include sm-down {
+				padding-top: 10px;
+			}
+
+			.button_1 {
+				padding-bottom: 15px;
+			}
+
+			.button_2 {
+				padding-bottom: 15px;
+				button {
+					@include lg-up {
+						min-width: 176px;
+					}
+				}
+			}
+		}
+	}
+
+	.footer_end {
+		padding: 30px 0;
+		.footer_end_inner {
+			@extend %d_flex;
+			justify-content: space-between;
+
+			@include sm-down {
+				flex-wrap: wrap;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				gap: 15px;
+			}
+
+			.copyright {
+				@include sm-down {
+					display: block;
+					order: 2;
+				}
+			}
+			.social_icon {
+				@extend %f_r_aj_center;
+
+				@include sm-down {
+					width: 100%;
+					order: 1;
+				}
+
+				.icon {
+					padding: 10px;
+				}
+			}
+			.made_by_ting {
+				@include sm-down {
+					order: 3;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,46 @@
+@import "../../helpers/helpers.scss";
+
+
+.weexist {
+	align-items: center;
+    background-color: var(--color_white);
+    color: #000;
+	.col_50 {
+		width: 50%;
+		position: relative !important;
+
+		@include sm-down {
+			width: 100%;
+		}
+		.quotes_wrap {
+			flex-wrap: nowrap;
+		}
+		.colmain {
+			width: 75%;
+			max-width: 500px;
+			margin-left: 8%;
+			margin-top: -4px;
+			@include sm-down {
+				width: 100%;
+				margin-left: 2%;
+				padding-right: 4%;
+				margin-top: 0;
+			}
+
+			p {
+				line-height: 1.5;
+				@include md-down {
+					line-height: 1.2;
+				}
+			}
+		}
+
+		.founder {
+			margin-bottom: 5%;
+			font-weight: 800;
+			@include sm-down {
+				margin-left: 5%;
+			}
+		}
+	}
+}

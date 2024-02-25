@@ -1,0 +1,65 @@
+@import "../helpers/helpers.scss";
+
+.footerBanner_wrap {
+	padding-bottom: 0;
+    @include md-down{
+		padding-top: 7vmin;
+	}
+	@include sm-down {
+		padding-bottom: 10vmin;
+	}
+	.bannerImg_content {
+		@extend %f_r_a_center;
+		padding-left: var(--container_left_space);
+		@include xl-down {
+			column-gap: 3vmin;
+		}
+		@include sm-down {
+			flex-direction: column-reverse;
+			row-gap: 10vmin;
+		}
+		.content {
+			width: 50%;
+			@include lg-down {
+				padding-right: 3%;
+			}
+			@include xxl-up {
+				padding-right: 8%;
+			}
+			@include xl-down {
+				padding-left: 30px;
+			}
+			@include mdl-down {
+				padding-right: 5%;
+			}
+			@include md-down {
+				width: 100%;
+				padding: 0 15px;
+			}
+			.title {
+				margin-bottom: 24px;
+				@include sm-down {
+					margin-bottom: 5px;
+				}
+			}
+			.desc {
+				margin-bottom: 30.5px;
+				max-width: 550px;
+			}
+		}
+		.bannerImg {
+			width: 50%;
+			@include md-down {
+				width: 100%;
+			}
+			img {
+				width: 100%;
+			}
+		}
+		br {
+			@include md-down {
+				display: none;
+			}
+		}
+	}
+}

@@ -1,0 +1,167 @@
+@import "../helpers/helpers.scss";
+
+// Primary Button
+.btn_primary {
+	border: 1px solid var(--color_primary);
+	color: var(--color_primary);
+	background-color: transparent;
+	font-family: var(--font_secondary);
+	font-weight: 500;
+	padding: 12px 24px;
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: middle;
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	position: relative;
+	transition: color 0.5s;
+
+	&:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: var(--color_primary);
+		transform: scaleY(0);
+		transform-origin: 50% 0;
+		transition: transform 0.5s ease-out;
+	}
+	&:hover {
+		color: var(--color_white);
+		&::before {
+			-webkit-transform: scaleY(1);
+			transform: scaleY(1);
+			transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+		}
+	}
+}
+
+// Secondary Button
+.btn_secondary {
+	border: 1px solid var(--color_border_grey_dark);
+	color: var(--color_black);
+	background-color: transparent;
+	font-size: 14px;
+	font-family: var(--font_secondary);
+	font-weight: 500;
+	cursor: pointer;
+	transition: 0.3s ease-in;
+	padding: 9px 27px;
+	.btn_icon {
+		display: none;
+	}
+	&:hover {
+		border: 1px solid var(--color_primary);
+		color: var(--color_primary);
+	}
+	@include sm-down {
+		padding: 9px 12px;
+	}
+	@include xs-down {
+		padding: 9px 9px;
+	}
+}
+
+// Button With Icon
+.btn_tertiary {
+	border: 0;
+	color: var(--color_grey_dark);
+	background-color: transparent;
+	font-family: var(--font_secondary);
+	font-weight: 500;
+	cursor: pointer;
+	transition: 0.3s ease-in;
+	padding: 0;
+	display: inline-block;
+	padding-bottom: 0.4rem;
+	position: relative;
+	transition: width 0.25s ease-out;
+	&::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 2px;
+		background-color: var(--color_grey_dark);
+		transition: width 0.25s ease-out;
+	}
+	&:hover {
+		color: var(--color_primary);
+		@keyframes expandWidth {
+			from {
+				width: 0; /* Start with width 0 */
+			}
+			to {
+				width: 100%; /* Expand width to 100% */
+			}
+		}
+		&::before {
+			background-color: var(--color_primary);
+			width: 100%;
+			animation: expandWidth 0.25s ease-out forwards; /* Run the animation on hover */
+		}
+		img {
+			transform: rotate(45deg);
+			filter: grayscale(0);
+			transition: all 0.25s ease-out;
+		}
+	}
+	img {
+		margin-left: 2px !important;
+		width: 15px !important;
+		height: 10px !important;
+		filter: grayscale(1);
+		transition: all 0.25s ease-out;
+	}
+}
+
+// Tab Button //
+.tab_btn {
+	border: 0;
+	color: var(--color_grey_dark);
+	background-color: transparent;
+	font-family: var(--font_secondary);
+	font-weight: 500;
+	font-size: 16px;
+	cursor: pointer;
+	transition: 0.3s ease-in;
+	padding: 0;
+	display: inline-block;
+	padding-bottom: 0.4rem;
+	position: relative;
+	transition: width 0.25s ease-out;
+	margin-right: 50px;
+	@include sm-down {
+		margin-right: 15px;
+	}
+	&:before {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 1px;
+		background-color: var(--color_grey_dark);
+		transition: width 0.25s ease-out;
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 0;
+		height: 1px;
+		background-color: var(--color_primary);
+		transition: width 0.25s ease-out;
+	}
+	&:hover {
+		color: var(--color_primary);
+		&:after {
+			width: 100%;
+		}
+	}
+}

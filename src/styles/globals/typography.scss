@@ -1,0 +1,99 @@
+// .text_xxs {}
+// .text_xs {}
+.text_sm {
+	font-size: 14px;
+}
+
+//for default body copy font
+.text_reg {
+	font-size: 16px;
+	line-height: calc(25 / 16);
+}
+.text_md {
+	font-size: 18px;
+	line-height: calc(25 / 18);
+}
+.text_lg {
+	font-size: 20px;
+	line-height: calc(25 / 20);
+	@include sm-down {
+		font-size: 16px;
+	}
+}
+.text_xl {
+	font-size: 22px;
+	line-height: calc(25 / 22);
+	@include md-down {
+		font-size: 15px;
+	}
+}
+.text_2xl {
+	font-size: 24px;
+	line-height: calc(32 / 24);
+	@include md-down {
+		font-size: 20px;
+	}
+	@include sm-down {
+		font-size: 17px;
+		line-height: 1.1;
+	}
+}
+.text_3xl {
+	font-size: 50px;
+	line-height: 1;
+	@include lg-down {
+		font-size: 40px;
+	}
+	@include mdl-down {
+		font-size: 34px;
+	}
+	@include md-down {
+		font-size: 29px;
+		line-height: 1.1;
+	}
+}
+.text_4xl {
+	font-size: 90px;
+	line-height: 1.1;
+	@include md-down {
+		font-size: 46px;
+	}
+	@include sm-down {
+		font-size: 32px;
+	}
+}
+.text_5xl {
+	font-size: 120px;
+	line-height: 1.1;
+	@include lg-down {
+		font-size: 70px;
+	}
+	@include sm-down {
+		font-size: 35px;
+	}
+}
+.text_6xl {
+	font-size: 140px;
+	line-height: 1.1;
+
+	@include lg-only {
+		font-size: 110px;
+	}
+	@include md-down {
+		font-size: 75px;
+		line-height: 1;
+	}
+	@include xxs-down {
+		font-size: 65px;
+	}
+}
+
+// //each loop for creating font weights ->
+// //.text_100, .text_200 .....
+$sizes: 300, 400, 500, 600; //reg,med,semibold,bold,extrabold,black
+
+@each $size in $sizes {
+	.text_#{$size} {
+		font-weight: $size;
+	}
+}
