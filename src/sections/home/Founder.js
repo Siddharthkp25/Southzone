@@ -12,7 +12,7 @@ import Senthil from "@/../public/img/home/founder.jpg";
 import Quotes from "@/../public/img/quotes1.svg";
 
 // STYLES //
-import styles from "@/styles/sections/home/founder.module.scss";
+import styles from "@/styles/sections/home/Founder.module.scss";
 
 // importing aos
 import AOS from "aos";
@@ -47,9 +47,9 @@ export default function Founder() {
 							</div>
 							<p className="font_secondary text_xl">
 								One of the most conspicuous organizations in the field of construction and
-								interior designing in Chennai India. Southzone construction and interiors
+								interior designing in Chennai India. <strong>Southzone construction</strong> and interiors
 								is synonymous with innovation and creativity in the market. Apart from
-								Construction and interior designing, southzone construction and interiors
+								Construction and interior designing, <strong>Southzone construction</strong> and interiors
 								also specializes in space analysis, planning, designing and construction
 								and facility management. It is equipped with professionals with
 								knowledge, experience, creativity, thoroughness and professionalism to

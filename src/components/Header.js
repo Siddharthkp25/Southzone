@@ -31,7 +31,7 @@ const menuItems = [
 		text: "Contact Us",
 		link: "/membership",
 	},
-];
+]; 
 
 /** Header Component */
 const Header = () => {
@@ -112,7 +112,7 @@ const Header = () => {
 									<li key={index}>
 										<Link href={menuItem.link}>
 											<a
-												className={`text_500  ${router.pathname === menuItem.link ? styles.active : ""}`}
+												className={`text_700  ${router.pathname === menuItem.link ? styles.active : ""}`}
 												onClick={() => handleMenuClick(index)}
 											>
 												{menuItem.text}

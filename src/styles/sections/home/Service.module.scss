@@ -1,0 +1,14 @@
+@import "../../helpers/helpers.scss";
+
+
+.service{
+    .main{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+        margin-top: 2%;
+        @include sm-down{
+            grid-template-columns: auto;
+        }
+    }
+}

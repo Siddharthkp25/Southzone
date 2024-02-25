@@ -3,9 +3,7 @@
 .index_page {
 	min-height: 100vh;
 	z-index: 1;
-	.take_a_big_success_section {
-		@extend %relative_box;
-		overflow: hidden;
-		margin-top: -5px;
+    @include sm-down{
+		height: 100%;
 	}
 }

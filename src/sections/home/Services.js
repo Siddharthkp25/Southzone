@@ -10,7 +10,7 @@ import Image from "next/image";
 //IMAGES //
 
 // STYLES //
-import styles from "@/styles/sections/home/service.module.scss";
+import styles from "@/styles/sections/home/Service.module.scss";
 
 // importing aos
 import AOS from "aos";

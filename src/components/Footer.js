@@ -75,7 +75,7 @@ const Footer = () => {
 								</Link>
 							</div>
 							<div className={`${styles.address}`}>
-								<Link href="https://www.google.com/maps/place/ABS+INDIA+PRIVATE+LIMITED/@12.960752,77.6470915,15z/data=!4m6!3m5!1s0x3bae1548fa33ca61:0xf4b45ee79100460f!8m2!3d12.960752!4d77.6470915!16s%2Fg%2F11q8fkcts1?entry=ttu">
+								<Link href="https://www.google.com/maps/place/SouthZone+Interior/@12.9207768,80.1438842,13z/data=!3m1!4b1!4m6!3m5!1s0x3a525e9f9933f75d:0xd3cd571e8f2c3971!8m2!3d12.9206964!4d80.1850844!16s%2Fg%2F11ryr4b8_q?entry=ttu">
 									<a target="_blank">
 										<p className={`${styles.para_text} color_black`}>
 											No: 7/476, Second Floor, Velachery Road, Near Hotel Vasantha Bhavan,
