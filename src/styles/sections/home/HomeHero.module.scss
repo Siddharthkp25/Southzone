@@ -8,6 +8,7 @@
 	justify-content: space-between;
 	margin: 0 auto;
 	height: 100vh;
+	
 	@include sm-down {
 		font-size: 45px;
 		display: block;
@@ -49,7 +50,7 @@
 		}
 	}
 	.banner1 {
-		width: 380px;
+		width: 300px;
 		height: 300px;
 		@include sm-down {
 			width: 100%;

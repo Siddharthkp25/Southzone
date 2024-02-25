@@ -36,6 +36,7 @@ export default function Service() {
 							<div>
 								Full kitchen re-design handled with the highest quality material
 							</div>
+							
 						</div>
 						<div>
 							<p className="text_1xl">02</p>
