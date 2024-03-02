@@ -25,9 +25,6 @@ a {
 main {
 	min-height: 100vh;
   margin-bottom: 515px;
-  @include sm-down{
-    margin-bottom: 0;
-  }
 	@include xl-down {
 		min-height: 100%;
 	}

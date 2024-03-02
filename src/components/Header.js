@@ -20,18 +20,22 @@ import styles from "@/styles/components/Header.module.scss";
 
 const menuItems = [
 	{
-		text: "Home", 
+		text: "Our story",
 		link: "/our-story",
 	},
 	{
-		text: "Projects",  
+		text: "Be CEO Ready",
 		link: "/be-ceo-ready",
 	},
 	{
-		text: "Contact Us",
+		text: "Explore membership",
 		link: "/membership",
 	},
-]; 
+	{
+		text: "Get in touch",
+		link: "/contact",
+	},
+];
 
 /** Header Component */
 const Header = () => {
@@ -112,7 +116,7 @@ const Header = () => {
 									<li key={index}>
 										<Link href={menuItem.link}>
 											<a
-												className={`text_700  ${router.pathname === menuItem.link ? styles.active : ""}`}
+												className={`text_500  ${router.pathname === menuItem.link ? styles.active : ""}`}
 												onClick={() => handleMenuClick(index)}
 											>
 												{menuItem.text}
