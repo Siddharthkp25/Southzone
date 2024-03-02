@@ -1,9 +1,16 @@
 @import "../helpers/helpers.scss";
 
-.index_page {
+.main {
 	min-height: 100vh;
 	z-index: 1;
     @include sm-down{
 		height: 100%;
+	}
+}
+
+.formmain{
+    width: 50%;
+	@include sm-down{
+		width: 100%;
 	}
 }

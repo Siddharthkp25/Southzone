@@ -10,7 +10,7 @@ import ContactForm from "@/components/Form";
 // PLUGINS //
 
 // STYLES //
-
+import styles from "@/styles/pages/Contact.module.scss";
 /** Contact Page */
 export default function Contact() {
 	return (
@@ -22,9 +22,10 @@ export default function Contact() {
 			</Head>
 
 			<Header />
-			<main className="contactPage">
-				<h2>This is contact page</h2>
+			<main className="contactPage bg_secondary section_spacing">
+				<div className={`${styles.formmain} container`}>
 				<ContactForm />
+				</div>
 			</main>
 			<Footer />
 		</div>

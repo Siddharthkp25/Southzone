@@ -122,7 +122,8 @@
 
 				.para_text {
 					padding-bottom: 10px;
-
+					font-weight: 700;
+					font-family: var(--font_secondary);
 					@include sm-down {
 						font-size: 15px;
 					}
@@ -136,6 +137,8 @@
 
 		.menu_sec {
 			width: 50%;
+			font-weight: 700;
+			font-family: var(--font_primary);
 			@extend %d_flex;
 			justify-content: space-evenly;
 

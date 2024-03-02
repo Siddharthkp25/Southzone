@@ -29,9 +29,9 @@ export default function Home() {
 			<Header />
 			<main className={`${styles.index_page} bg_secondary`}>
 				<HomeHero />
+				<Founder />
 				<Service />
 				<OurProjects />
-				<Founder />
 			</main>
 			<Footer />
 		</div>

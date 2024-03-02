@@ -10,7 +10,7 @@ import Image from "next/image";
 //IMAGES //
 
 // STYLES //
-import styles from "@/styles/sections/home/service.module.scss";
+import styles from "@/styles/sections/home/Service.module.scss";
 
 // importing aos
 import AOS from "aos";
@@ -36,6 +36,7 @@ export default function Service() {
 							<div>
 								Full kitchen re-design handled with the highest quality material
 							</div>
+							
 						</div>
 						<div>
 							<p className="text_1xl">02</p>

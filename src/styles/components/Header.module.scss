@@ -80,13 +80,15 @@
 					}
 					a {
 						color: var(--color_black);
+						font-weight: 700;
+						font-family: var(--font_primary);
 						transition: all 0.4s ease-out;
 						&:hover {
 							color: var(--color_primary);
 						}
-						&.active {
-							color: var(--color_primary);
-						}
+						// &.active {
+						// 	color: var(--color_primary);
+						// }
 					}
 				}
 			}

@@ -1,3 +1,5 @@
+@import "../helpers/helpers.scss";
+
 /* styles/styles.module.css */
 .container {
 	max-width: 400px;
@@ -5,6 +7,7 @@
 	padding: 20px;
 	border: 1px solid #ccc;
 	border-radius: 8px;
+	font-family: var(--font_primary);
 }
 
 .form-group {
@@ -15,6 +18,8 @@
 	display: block;
 	font-weight: bold;
 	margin-bottom: 6px;
+	margin-top: 15px;
+	font-size: 25px;
 }
 
 .input {
@@ -22,6 +27,11 @@
 	padding: 10px;
 	border: 1px solid #ccc;
 	border-radius: 4px;
+	font-size: 20px;
+	font-weight: 500;
+	@include sm-down{
+		font-size: 18px;
+	}
 }
 
 .textarea {
@@ -30,6 +40,12 @@
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	resize: vertical;
+	font-size: 20px;
+	font-weight: 500;
+	
+	@include sm-down{
+		font-size: 18px;
+	}
 }
 
 .button {
@@ -37,6 +53,29 @@
 	color: #fff;
 	border: none;
 	border-radius: 4px;
-	padding: 10px 20px;
 	cursor: pointer;
+	padding: 20px;
+	width: 30%;
+	margin-top: 5%;
+	font-size: 25px;
+	font-weight: 700;
+	font-family: var(--font_primary);
+	text-transform: uppercase;
+	@include sm-down{
+		width: 100%;
+	}
+}
+
+.error{
+	color: red;
+}
+
+.form{
+	background-color: #111214;
+	padding: 2rem;
+	margin-top: 5%;
+
+	@include sm-down{
+		padding: 1rem;
+	}
 }
