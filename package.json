@@ -12,6 +12,8 @@
 		"@next/react-refresh-utils": "^14.1.0",
 		"aos": "^3.0.0-beta.6",
 		"gsap": "^3.12.5",
+		"html-react-parser": "^5.1.16",
+		"lightgallery": "^2.7.2",
 		"next": "12.3.0",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
