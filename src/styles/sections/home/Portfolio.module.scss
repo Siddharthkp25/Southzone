@@ -1,0 +1,50 @@
+@import "../../helpers/helpers.scss";
+
+#portfolio{
+    .kitchen{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        align-items: center;
+        justify-content: space-around;
+        padding: 60px 0 60px 0;
+        .left{
+            .heading{
+                padding: 10px 0 10px 0;
+            }
+        }
+        .right{
+            position: relative;
+            .float_div{
+                position: absolute;
+                width: 40%;
+                left: -15%;
+                top: 40%;
+            }
+        }
+    }
+
+    .cabinets{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        align-items: center;
+        justify-content: space-around;
+        padding: 60px 0 60px 0;
+        .left{
+            padding-left: 120px;
+            .heading{
+                padding: 10px 0 10px 0;
+            }
+        }
+        .right{
+            position: relative;
+            .float_div{
+                position: absolute;
+                width: 40%;
+                right: -15%;
+                top: 40%;
+            }
+        }
+    }
+}

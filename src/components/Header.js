@@ -25,7 +25,7 @@ const menuItems = [
 	},
 	{
 		text: "Projects",  
-		link: "/be-ceo-ready",
+		link: "/projects",
 	},
 	{
 		text: "Contact Us",

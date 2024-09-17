@@ -77,3 +77,18 @@ picture {
 .font_secondary {
   font-family: var(--font_secondary);
 }
+
+.color_yellow{
+  color: #f57513;
+}
+
+.icon_border{
+  border-top-left-radius: 25vw;
+  border-top-right-radius: 25vw;
+}
+
+.lg-react-element{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 25px;
+}

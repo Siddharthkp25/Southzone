@@ -1,0 +1,42 @@
+@import "../helpers/helpers.scss";
+
+.event_details {
+	.card_inner {
+		background-color: var(--color_white);
+		color: var(--color_black);
+		.card_details {
+			padding: 20px 15px;
+			@include sm-down {
+				padding: 15px 20px 20px 20px;
+			}
+
+			.card_loc_year {
+				padding-bottom: 15px;
+
+				@include sm-down {
+					padding-bottom: 10px;
+				}
+			}
+
+			.card_text {
+				padding-bottom: 10px;
+			}
+			.card_desc {
+				padding-bottom: 20px;
+				@include sm-down {
+					padding-bottom: 10px;
+				}
+			}
+
+			.link_sec {
+				display: inline-block;
+
+				.linkItem {
+					.km {
+						padding-right: 5px;
+					}
+				}
+			}
+		}
+	}
+}

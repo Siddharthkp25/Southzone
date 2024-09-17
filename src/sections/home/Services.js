@@ -26,8 +26,8 @@ export default function Service() {
 		<section className="section_spacing">
 			<div className={`${styles.service} font_secondary`}>
 				<div className="container">
-					<p>SERVICES</p>
-					<div className="text_3xl font_primary">Kitchen, cabinets, and more</div>
+					<p className="color_yellow">SERVICES</p>
+					<div className="text_3xl font_primary ">Kitchen, cabinets, and more</div>
 
 					<div className={styles.main}>
 						<div>

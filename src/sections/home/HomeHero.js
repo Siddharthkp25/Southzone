@@ -9,7 +9,9 @@ import { gsap } from "gsap";
 // PLUGINS //
 
 // IMAGES //
-import bannerimg1 from "@/../public/img/bannerimg1.jpg";
+import bannerimg1 from "@/../public/img/home/bannerimg1.jpg";
+import bannerimg2 from "@/../public/img/home/banner_icon1.jpg";
+
 // STYLES //
 import styles from "../../styles/sections/home/HomeHero.module.scss";
 
@@ -42,16 +44,23 @@ export default function HomeHero() {
 					<div>refined</div>
 					<div className={styles.main}>
 						<div className={styles.stripe}></div>
-						<div>interior</div>
+						<div className="font_secondary">interior</div>
 					</div>
-					<div>design</div>
+					<div className="color_yellow font_secondary">design</div>
 				</div>
+				<div className={styles.banner_right}>
 
-				<div>
-					<div  className={styles.banner1} >
+					<div className={styles.banner1}>
+						<div data-aos="fade-right">
 						<Image src={bannerimg1}  alt=""/>
+						</div>
 					</div>
-				</div>
+					<div className={styles.banner_icon}>
+					<div  data-aos="fade-left">
+						<Image className="icon_border" src={bannerimg2} alt="" />
+						</div>
+					</div>
+				</div>	
 			</div>
 		</section>
 	);

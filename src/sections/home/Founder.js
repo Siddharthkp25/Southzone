@@ -40,9 +40,9 @@ export default function Founder() {
 						<div className={styles.colmain}>
 							<div className={styles.founder}>
 								<div className="font_primary text_3xl">Mr. Senthil Kumar</div>
-								<h1 className="font_primary">
+								<h1 className="font_primary color_yellow">
 									FOUNDER and CEO,
-									<span className="font_primary">andSouthzone</span>
+									<span className="font_primary">Southzone</span>
 								</h1>
 							</div>
 							<p className="font_secondary text_xl">
