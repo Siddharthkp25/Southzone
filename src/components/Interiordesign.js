@@ -26,7 +26,7 @@ const InteriorDesign = ({ eventData, setPopupVisible }) => {
         <>
             <div className={`${styles.event_details}`} onClick={handleClick}>
                 <div className={`${styles.card_inner}`}>
-                    <div className="next_cover_image objectFitCover">
+                    <div className="next_image objectFitCover">
                         <Image
                             src={imageSrc}
                             alt=""

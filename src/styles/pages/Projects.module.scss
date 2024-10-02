@@ -2,4 +2,9 @@
 
 .index_page{
     padding-top: 152px;
+    .maindata{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 50px 0 50px 0;
+    }
 }

@@ -10,48 +10,43 @@ export default function Projects() {
   const [popupVisible, setPopupVisible] = useState(false);
   const [selectedEventData, setSelectedEventData] = useState(null);
 
-  const eventData = {
-    attributes: {
-      imageSrc: "/img/bannerimg1.jpg",
-      venue: "Venue Name",
-      date: "2024-07-21",
-      title: "Siddharth Title",
-      eventImages: {
-        data: [
-          {
-            attributes: {
-              url: "/img/good-company/img_1.jpg",
+  const eventsData = [
+    {
+        attributes: {
+            imageSrc: "/img/bannerimg1.jpg",
+            venue: "Venue Name 1",
+            date: "2024-07-21",
+            title: "Siddharth Title 1",
+            description: "<p>Some description for event 1.</p>",
+            eventImages: {
+                data: [
+                    { attributes: { url: "/img/good-company/img_1.jpg" } },
+                    { attributes: { url: "/img/good-company/img_2.jpg" } },
+                ],
             },
-          },
-          {
-            attributes: {
-              url: "/img/good-company/img_3.jpg",
-            },
-          },
-          {
-            attributes: {
-              url: "/img/good-company/img_3.jpg",
-            },
-          },
-          {
-            attributes: {
-              url: "/img/good-company/img_3.jpg",
-            },
-          },
-          {
-            attributes: {
-              url: "/img/good-company/img_3.jpg",
-            },
-          },
-          
-          // Add more images as needed
-        ],
-      },
+        },
     },
-  };
+    {
+        attributes: {
+            imageSrc: "/img/bannerimg1.jpg",
+            venue: "Venue Name 2",
+            date: "2024-08-15",
+            title: "Siddharth Title 2",
+            description: "<p>Some description for event 2.</p>",
+            eventImages: {
+                data: [
+                    { attributes: { url: "/img/good-company/img_3.jpg" } },
+                    { attributes: { url: "/img/good-company/img_4.jpg" } },
+                ],
+            },
+        },
+    },
+    // Ensure all objects in the array have the same structure
+];
+
 
   const handleInteriorDesignClick = () => {
-    setSelectedEventData(eventData.attributes);
+    setSelectedEventData(eventsData.attributes);
     setPopupVisible(true);
   };
 
@@ -71,12 +66,15 @@ export default function Projects() {
       <Header />
       <main className={`${styles.index_page} bg_secondary`}>
         <div className="container">
-          <div className="font_secondary text_3xl">Interior Design</div>
-          <div>
-            <InteriorDesign
-              eventData={eventData.attributes}
-              setPopupVisible={handleInteriorDesignClick}
-            />
+          <div className="font_primary text_3xl">Interior Design</div>
+          <div className={styles.maindata}>
+            {eventsData.map((eventData, index) => (
+              <InteriorDesign
+                key={index} // Use a unique key for each item
+                eventData={eventData.attributes} // Pass the attributes of the event
+                setPopupVisible={setPopupVisible}
+              />
+            ))}
 
             {popupVisible && (
               <Popup

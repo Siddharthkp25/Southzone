@@ -1,11 +1,14 @@
 @import "../helpers/helpers.scss";
 
 .event_details {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	gap: 25px;
 	.card_inner {
-		background-color: var(--color_white);
 		color: var(--color_black);
 		.card_details {
 			padding: 20px 15px;
+			background-color: var(--color_white);
 			@include sm-down {
 				padding: 15px 20px 20px 20px;
 			}
