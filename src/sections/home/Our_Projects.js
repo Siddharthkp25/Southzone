@@ -40,7 +40,7 @@ export default function OurProjects() {
 		<section className={`${styles.section_wrap}`}>
 			<div className="container">
 				<div className={`${styles.title_sec}`}>
-					<h2 className={`${styles.title} section_title text_4xl font_primary`}>
+					<h2 className={`${styles.title} section_title text_4xl`}>
 						Our Projects
 					</h2>
 				</div>

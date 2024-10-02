@@ -31,18 +31,18 @@ export default function Portfolio() {
   return (
     <section id={styles.portfolio} className="bg_secondary">
       <div className="container">
-        <div className="color_yellow">PORTFOLIO</div>
-        <div className="section_title text_4xl font_secondary">
+        <div className="color_yellow font_primary">PORTFOLIO</div>
+        <div className="section_title text_4xl font_primary">
           Recent Projects
         </div>
 
         <div className={styles.kitchen}>
           <div className={styles.left}>
             <div className="color_yellow">01</div>
-            <div className={`${styles.heading} text_2xxl font_secondary`}>
+            <div className={`${styles.heading} text_2xxl font_primary`}>
               Kitchen in Calabasas
             </div>
-            <div className="font_primary text_md">
+            <div className="font_secondary text_md">
               A vibrant, modern kitchen re-modeling in Calabasas, CA
             </div>
           </div>
@@ -52,9 +52,9 @@ export default function Portfolio() {
             </div>
             <div className={styles.float_div}>
               <Image
-                data-aos="fade-up"
+                data-aos="fade-left"
                 data-aos-easing="ease-in"
-                data-aos-delay="500"
+                data-aos-delay="2000"
                 data-aos-offset="0"
                 className="icon_border"
                 src={kitchen_icon}
@@ -71,9 +71,9 @@ export default function Portfolio() {
             </div>
             <div className={styles.float_div}>
               <Image
-                data-aos="fade-up"
+                data-aos="fade-right"
                 data-aos-easing="ease-in"
-                data-aos-delay="500"
+                data-aos-delay="2000"
                 data-aos-offset="0"
                 className="icon_border"
                 src={cabinets_icon}
@@ -83,10 +83,10 @@ export default function Portfolio() {
           </div>
           <div className={styles.left}>
             <div className="color_yellow">02</div>
-            <div className={`${styles.heading} text_2xxl font_secondary`}>
+            <div className={`${styles.heading} text_2xxl font_primary`}>
               New cabinets
             </div>
-            <div className="font_primary text_md">
+            <div className="font_secondary text_md">
               New cabinets in Beverley Hills house
             </div>
           </div>
@@ -95,10 +95,10 @@ export default function Portfolio() {
         <div className={styles.kitchen}>
           <div className={styles.left}>
             <div className="color_yellow">03</div>
-            <div className={`${styles.heading} text_2xxl font_secondary`}>
+            <div className={`${styles.heading} text_2xxl font_primary`}>
               A modern bedroom
             </div>
-            <div className="font_primary text_md">
+            <div className="font_psecondary text_md">
               Newly designed bedroom in Woodland Hills
             </div>
           </div>
@@ -108,9 +108,9 @@ export default function Portfolio() {
             </div>
             <div className={styles.float_div}>
               <Image
-                data-aos="fade-up"
+                data-aos="fade-left"
                 data-aos-easing="ease-in"
-                data-aos-delay="500"
+                data-aos-delay="2000"
                 data-aos-offset="0"
                 className="icon_border"
                 src={bedroom_icon}

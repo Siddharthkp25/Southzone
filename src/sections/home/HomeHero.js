@@ -39,14 +39,14 @@ export default function HomeHero() {
 	return (
 		<section>
 			<div className={`${styles.hero_wrap} container` }>
-				<div className={`${styles.heading} text_600 font_secondary`} data-aos="fade-right">
-					<div className="font_secondary">Elegantly</div>
+				<div className={`${styles.heading} font_primary`} data-aos="fade-right">
+					<div>Elegantly</div>
 					<div>refined</div>
 					<div className={styles.main}>
 						<div className={styles.stripe}></div>
-						<div className="font_secondary">interior</div>
+						<div>interior</div>
 					</div>
-					<div className="color_yellow font_secondary">design</div>
+					<div className="color_yellow">design</div>
 				</div>
 				<div className={styles.banner_right}>
 

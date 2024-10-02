@@ -1,0 +1,33 @@
+@import "../../helpers/helpers.scss";
+
+.HomeIntro {
+	position: fixed;
+	top: 0;
+	// @extend %full_overlay;
+	z-index: 9999;
+	overflow: hidden;
+	.intro_wrapper {
+		@extend %relative_box;
+		.scene_1 {
+			width: 100vw;
+			height: 100vh;
+			display: grid;
+			place-items: center;
+			background-color: var(--color_primary);
+			.logo {
+				max-width: 270px;
+			}
+		}
+
+		.scene_2 {
+			@extend .scene_1;
+
+			.intro_content {
+				overflow: hidden;
+				.title {
+					transform: translateY(100%);
+				}
+			}
+		}
+	}
+}

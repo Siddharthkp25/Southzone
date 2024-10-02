@@ -2,10 +2,15 @@
 
 .section_wrap {
 	padding:120px 0 120px 0;
+
+	@include sm-down{
+		padding: 40px 0 40px;
+	}
 	.title {
 		margin-bottom: 30px;
         color: var(--color_white);
-        font-family: var(--font_secondary);
+        font-family: var(--font_primary);
+		
 	}
 	.animation_section {
 		.marq_item {

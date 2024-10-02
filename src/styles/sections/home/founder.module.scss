@@ -31,12 +31,13 @@
 				line-height: 1.5;
 				@include sm-down{
 					margin-bottom: 5%;
-					font-size: 25px;
+					
 					line-height: 1.8;
 				}
 				@include md-down {
 					line-height: 1.2;
 					text-align: center;
+					
 				}
 			}
 		}

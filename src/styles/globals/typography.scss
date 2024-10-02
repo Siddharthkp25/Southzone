@@ -24,7 +24,7 @@
 	font-size: 22px;
 	line-height: calc(25 / 22);
 	@include md-down {
-		font-size: 15px;
+		font-size: 18px  !important;
 	}
 }
 .text_2xl {
