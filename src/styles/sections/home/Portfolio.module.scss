@@ -12,11 +12,14 @@
         @include sm-down{
             grid-template-columns: auto;
             padding: 0;
-            order: 2;
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 0;
         }
         .left{
             .heading{
                 padding: 10px 0 10px 0;
+                
                 
             }
         }
