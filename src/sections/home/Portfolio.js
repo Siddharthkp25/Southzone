@@ -54,7 +54,7 @@ export default function Portfolio() {
               <Image
                 data-aos="fade-left"
                 data-aos-easing="ease-in"
-                data-aos-delay="2000"
+                data-aos-delay="500"
                 data-aos-offset="0"
                 className="icon_border"
                 src={kitchen_icon}
@@ -73,7 +73,7 @@ export default function Portfolio() {
               <Image
                 data-aos="fade-right"
                 data-aos-easing="ease-in"
-                data-aos-delay="2000"
+                data-aos-delay="500"
                 data-aos-offset="0"
                 className="icon_border"
                 src={cabinets_icon}
@@ -110,7 +110,7 @@ export default function Portfolio() {
               <Image
                 data-aos="fade-left"
                 data-aos-easing="ease-in"
-                data-aos-delay="2000"
+                data-aos-delay="500"
                 data-aos-offset="0"
                 className="icon_border"
                 src={bedroom_icon}

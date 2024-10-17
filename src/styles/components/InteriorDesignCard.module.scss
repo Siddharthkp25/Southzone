@@ -1,9 +1,7 @@
 @import "../helpers/helpers.scss";
 
 .event_details {
-	display: grid;
-	grid-template-columns: auto auto auto;
-	gap: 25px;
+	
 	.card_inner {
 		color: var(--color_black);
 		.card_details {

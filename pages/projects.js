@@ -16,12 +16,15 @@ export default function Projects() {
             imageSrc: "/img/bannerimg1.jpg",
             venue: "Venue Name 1",
             date: "2024-07-21",
-            title: "Siddharth Title 1",
+            title: "Site 1",
             description: "<p>Some description for event 1.</p>",
             eventImages: {
                 data: [
                     { attributes: { url: "/img/good-company/img_1.jpg" } },
-                    { attributes: { url: "/img/good-company/img_2.jpg" } },
+                    { attributes: { url: "/img/good-company/img_1.jpg" } },
+                    { attributes: { url: "/img/good-company/img_1.jpg" } },
+                    { attributes: { url: "/img/good-company/img_1.jpg" } },
+                    { attributes: { url: "/img/good-company/img_1.jpg" } },
                 ],
             },
         },
@@ -31,22 +34,59 @@ export default function Projects() {
             imageSrc: "/img/bannerimg1.jpg",
             venue: "Venue Name 2",
             date: "2024-08-15",
-            title: "Siddharth Title 2",
+            title: "Site 2",
             description: "<p>Some description for event 2.</p>",
             eventImages: {
                 data: [
                     { attributes: { url: "/img/good-company/img_3.jpg" } },
-                    { attributes: { url: "/img/good-company/img_4.jpg" } },
+                    { attributes: { url: "/img/good-company/img_3.jpg" } },
+                    { attributes: { url: "/img/good-company/img_3.jpg" } },
+                    { attributes: { url: "/img/good-company/img_3.jpg" } },
+                    { attributes: { url: "/img/good-company/img_3.jpg" } },
                 ],
             },
         },
-    },
-    // Ensure all objects in the array have the same structure
-];
+    },{
+      attributes: {
+          imageSrc: "/img/bannerimg1.jpg",
+          venue: "Venue Name 3",
+          date: "2024-08-15",
+          title: "Site 3",
+          description: "<p>Some description for event 2.</p>",
+          eventImages: {
+              data: [
+                  { attributes: { url: "/img/good-company/img_4.jpg" } },
+                  { attributes: { url: "/img/good-company/img_4.jpg" } },
+                  { attributes: { url: "/img/good-company/img_4.jpg" } },
+                  { attributes: { url: "/img/good-company/img_4.jpg" } },
+                  { attributes: { url: "/img/good-company/img_4.jpg" } },
+              ],
+          },
+      },     
+  },{
+    attributes: {
+        imageSrc: "/img/bannerimg1.jpg",
+        venue: "Venue Name 3",
+        date: "2024-08-15",
+        title: "Site 3",
+        description: "<p>Some description for event 2.</p>",
+        eventImages: {
+            data: [
+                { attributes: { url: "/img/good-company/img_4.jpg" } },
+                { attributes: { url: "/img/good-company/img_4.jpg" } },
+                { attributes: { url: "/img/good-company/img_4.jpg" } },
+                { attributes: { url: "/img/good-company/img_4.jpg" } },
+                { attributes: { url: "/img/good-company/img_4.jpg" } },
+            ],
+        },
+    },     
+}
+    // Add more events here as needed
+  ];
 
-
-  const handleInteriorDesignClick = () => {
-    setSelectedEventData(eventsData.attributes);
+  // Updated to take the specific event's data
+  const handleInteriorDesignClick = (eventData) => {
+    setSelectedEventData(eventData);
     setPopupVisible(true);
   };
 
@@ -70,16 +110,17 @@ export default function Projects() {
           <div className={styles.maindata}>
             {eventsData.map((eventData, index) => (
               <InteriorDesign
-                key={index} // Use a unique key for each item
-                eventData={eventData.attributes} // Pass the attributes of the event
-                setPopupVisible={setPopupVisible}
+                key={index} // Unique key for each item
+                eventsData={eventData.attributes} // Pass the event attributes
+                onClick={() => handleInteriorDesignClick(eventData.attributes)} // Pass the clicked event's data
               />
             ))}
 
             {popupVisible && (
               <Popup
-                eventData={selectedEventData}
+                data={selectedEventData} // Pass the selected event data to the popup
                 onClose={handleClosePopup}
+                popupVisible={popupVisible}
                 setPopupVisible={setPopupVisible}
               />
             )}

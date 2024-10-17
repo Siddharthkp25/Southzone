@@ -11,7 +11,8 @@ import 'lightgallery/css/lg-zoom.css';
 import 'lightgallery/css/lg-thumbnail.css';
 
 const Popup = ({ data, setPopupVisible, popupVisible }) => {
-    const selectedEventData = data?.attributes || {}; 
+    // Removed .attributes since the passed data is already correct
+    const selectedEventData = data || {}; 
     const eventImages = selectedEventData.eventImages?.data || []; 
 
     const onInit = () => {

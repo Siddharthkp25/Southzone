@@ -12,11 +12,13 @@ import Founder from "@/sections/home/Founder";
 import OurProjects from "@/sections/home/Our_Projects";
 import Service from "@/sections/home/Services";
 import Portfolio from "@/sections/home/Portfolio";
+import Clients from "@/sections/home/Clients";
 
 // PLUGINS //
 import { gsap } from "gsap";
 // STYLES //
 import styles from "../src/styles/pages/Home.module.scss";
+
 
 
 
@@ -32,12 +34,13 @@ export default function Home() {
 
 			<Header />
 			<main className={`${styles.index_page} bg_secondary`}>
-				<HomeIntro gsap={gsap} />
+				{/* <HomeIntro gsap={gsap} /> */}
 				<HomeHero />
 				<Service />
 				<Founder />
 				<OurProjects />
 				<Portfolio />
+				<Clients />
 			</main>
 			<Footer />
 		</div>

@@ -5,6 +5,10 @@
     .maindata{
         display: grid;
         grid-template-columns: auto auto auto;
-        padding: 50px 0 50px 0;
+        gap: 30px;
+        padding: 5% 0 5% 0;
+        @include sm-down{
+            grid-template-columns: auto;
+        }
     }
 }

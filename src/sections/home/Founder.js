@@ -27,7 +27,7 @@ export default function Founder() {
 	return (
 		<section className="bg_secondary">
 			<div className={`${styles.weexist} row bg_white`}>
-				<div className={styles.col_50} data-aos="fade-right" data-aos-delay="500">
+				<div className={styles.col_50} data-aos="fade-right" data-aos-delay="300">
 					<Image
 						src={Senthil}
 						alt="Founder"

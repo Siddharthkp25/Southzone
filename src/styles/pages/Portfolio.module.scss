@@ -3,7 +3,9 @@
 .index_page {
 	min-height: 100vh;
 	z-index: 1;
+	
     @include sm-down{
 		height: 100%;
+		
 	}
 }

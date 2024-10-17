@@ -87,7 +87,7 @@ export default function HomeIntro({ gsap }) {
 				isU(`.${styles.scene_2} .${styles.intro_content}`),
 				{
 					duration: 0.8,
-					y: "280%",
+					y: "250%",
 				},
 				"third"
 			)
