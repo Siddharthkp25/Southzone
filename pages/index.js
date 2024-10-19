@@ -34,7 +34,7 @@ export default function Home() {
 
 			<Header />
 			<main className={`${styles.index_page} bg_secondary`}>
-				{/* <HomeIntro gsap={gsap} /> */}
+				<HomeIntro gsap={gsap} />
 				<HomeHero />
 				<Service />
 				<Founder />

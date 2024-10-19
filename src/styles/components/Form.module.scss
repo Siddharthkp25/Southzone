@@ -24,7 +24,7 @@
 
 .input {
 	width: 100%;
-	padding: 10px;
+	padding: 15px;
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	font-size: 20px;
@@ -37,12 +37,13 @@
 
 .textarea {
 	width: 100%;
-	padding: 10px;
+	padding: 20px;
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	resize: vertical;
 	font-size: 20px;
 	font-weight: 500;
+	margin-bottom: 20px;
 	
 	@include sm-down{
 		font-size: 18px;
@@ -51,7 +52,7 @@
 
 .button {
 	background-color: #86c45f;
-	color: #fff;
+	color: #000;
 	border: none;
 	cursor: pointer;
 	padding: 20px;
@@ -62,7 +63,7 @@
 	font-family: var(--font_primary);
 	text-transform: uppercase;
 	@include sm-down{
-		width: 100%;
+		width: 50%;
 	}
 }
 
