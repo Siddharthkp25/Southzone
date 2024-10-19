@@ -97,7 +97,7 @@ const Footer = () => {
 									</Link>
 								</div>
 								<div className={`${styles.sub_menu}`}>
-									<Link href="/be-ceo-ready">
+									<Link href="/projects">
 										<a>Projeccts</a>
 									</Link>
 								</div>
