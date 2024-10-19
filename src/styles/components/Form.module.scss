@@ -11,7 +11,7 @@
 }
 
 .form-group {
-	margin-bottom: 20px;
+	margin-bottom: 50px;
 }
 
 .label {
@@ -29,6 +29,7 @@
 	border-radius: 4px;
 	font-size: 20px;
 	font-weight: 500;
+	margin-bottom: 20px;
 	@include sm-down{
 		font-size: 18px;
 	}
@@ -49,10 +50,9 @@
 }
 
 .button {
-	background-color: #007bff;
+	background-color: #86c45f;
 	color: #fff;
 	border: none;
-	border-radius: 4px;
 	cursor: pointer;
 	padding: 20px;
 	width: 30%;
@@ -74,7 +74,7 @@
 	background-color: #111214;
 	padding: 2rem;
 	margin-top: 5%;
-
+	border-radius: 30px;
 	@include sm-down{
 		padding: 1rem;
 	}

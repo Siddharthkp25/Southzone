@@ -41,19 +41,20 @@ function ContactForm() {
 
   return (
     <div className="section_spacing">
-      <div className="text_4xl font_secondary">Contact Us</div>
-      <div className="text_2xl font_primary">&nbsp;Excited to work with you!</div>
+      <div className="text_4xl font_primary">Contact Us</div>
+      <div className="text_2xl font_secondary">&nbsp;Excited to work with you!</div>
+      
       <form
         className={`${styles.form} section_spacing`}
         ref={formRef}
         onSubmit={handleSubmit(onSubmit)}
       >
         <div className={styles.formGroup}>
-          <label className={`${styles.label} font_secondary`} htmlFor="name">
+          <label className={`${styles.label} font_primary`} htmlFor="name">
             Name:
           </label>
           <input
-            className={`${styles.input} font_primary`}
+            className={`${styles.input} font_secondary `}
             type="text"
             id="name"
             name="name"
@@ -64,11 +65,11 @@ function ContactForm() {
           )}
         </div>
         <div className={styles.formGroup}>
-          <label className={styles.label} htmlFor="email">
+          <label className={`${styles.label} font_primary`} htmlFor="email">
             Email:
           </label>
           <input
-            className={`${styles.input} font_primary`}
+            className={`${styles.input} font_secondary`}
             type="email"
             id="email"
             name="email"
@@ -85,11 +86,11 @@ function ContactForm() {
           )}
         </div>
         <div className={styles.formGroup}>
-          <label className={styles.label} htmlFor="message">
+          <label className={`${styles.label} font_primary`} htmlFor="message">
             Message:
           </label>
           <textarea
-            className={`${styles.textarea} font_primary`}
+            className={`${styles.textarea} font_secondary`}
             id="message"
             name="message"
             {...register("message", {

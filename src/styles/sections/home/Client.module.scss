@@ -1,1 +1,21 @@
 @import "../../helpers/helpers.scss";
+
+.main{
+    .heading{
+        padding: 3% 0 3% 0;        
+        @include sm-down{
+            text-align: center;
+            padding-bottom: 5%;
+        }
+    }
+    .image_slide{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 25px;
+
+        @include sm-down{
+            grid-template-columns: auto auto;
+            justify-content: center;
+        }
+    }
+}
