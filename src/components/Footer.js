@@ -120,7 +120,7 @@ const Footer = () => {
 						<div className={`${styles.social_icon}`}>
 							<div className={`${styles.icon}`}>
 								<a
-									href="https://www.linkedin.com/company/bagggel-foundation/"
+									href="#"
 									target="_blank"
 									rel="noreferrer"
 								>
@@ -129,7 +129,7 @@ const Footer = () => {
 							</div>
 							<div className={`${styles.icon}`}>
 								<a
-									href="https://www.youtube.com/@Bagggelfoundation"
+									href="#"
 									target="_blank"
 									rel="noreferrer"
 								>
